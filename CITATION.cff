@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Imperfection-Sensitive Dryout in Parallel-Channel Two-Phase Cold Plates"
+authors:
+  - family-names: "Zamal"
+    given-names: "Ishtiaq Ahmed"
+    affiliation: "Islamic University of Technology (IUT), Bangladesh"
+license: MIT
+date-released: 2026-11-05
