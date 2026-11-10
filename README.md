@@ -4,6 +4,8 @@
 
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue) ![Tests](https://img.shields.io/badge/self--checks-passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-lightgrey) ![Status](https://img.shields.io/badge/status-early%20research-orange)
 
+**Status:** a manuscript based on this code is in preparation. If you use the code before it is published, please cite the repository using [`CITATION.cff`](CITATION.cff).
+
 ## Key result
 
 At a ±5 % channel-width tolerance, a 50-channel cold plate loses **about 12 % of its dryout power**, roughly **11× more** than a single-phase flow-split estimate predicts (about 1 %). With a marginal inlet restrictor, the loss can exceed 75 %.
@@ -78,8 +80,9 @@ python plot.py mishima               # Figs. 1 and 2
 1. Miglani, Weibel & Garimella (2021). Measurement of flow maldistribution induced by the Ledinegg instability during boiling in thermally isolated parallel microchannels. *Int. J. Multiphase Flow* 139, 103644. https://doi.org/10.1016/j.ijmultiphaseflow.2021.103644
 2. Miglani, Weibel & Garimella (2021). Effect of thermal coupling between parallel microchannels on the Ledinegg instability-induced flow maldistribution. *Int. J. Multiphase Flow* 139, 103536. https://doi.org/10.1016/j.ijmultiphaseflow.2020.103536
 3. Rahman & Weibel (2024). Thermal coupling and an asymptotic maldistribution stability boundary for flow boiling in parallel microchannels. *Int. J. Heat Mass Transfer* 228, 125671. https://doi.org/10.1016/j.ijheatmasstransfer.2024.125671
-4. Qu & Mudawar (2003). Measurement and prediction of pressure drop in two-phase micro-channel heat sinks. *Int. J. Heat Mass Transfer* 46, 2737–2753. https://doi.org/10.1016/S0017-9310(03)00044-9
-5. Kim & Mudawar (2013). Universal approach to predicting saturated flow boiling heat transfer in mini/micro-channels, Part I: Dryout incipience quality. *Int. J. Heat Mass Transfer* 64, 1226–1238. https://doi.org/10.1016/j.ijheatmasstransfer.2013.04.016
+4. Rahman & Weibel (2026). Combined influence of lateral thermal coupling and inlet restrictors on flow boiling maldistribution in many parallel microchannels. *Thermal Science and Engineering Progress* 70, 104496. https://www.sciencedirect.com/science/article/pii/S2451904926000223
+5. Qu & Mudawar (2003). Measurement and prediction of pressure drop in two-phase micro-channel heat sinks. *Int. J. Heat Mass Transfer* 46, 2737–2753. https://doi.org/10.1016/S0017-9310(03)00044-9
+6. Kim & Mudawar (2013). Universal approach to predicting saturated flow boiling heat transfer in mini/micro-channels, Part I: Dryout incipience quality. *Int. J. Heat Mass Transfer* 64, 1226–1238. https://doi.org/10.1016/j.ijheatmasstransfer.2013.04.016
 
 ## Author
 
