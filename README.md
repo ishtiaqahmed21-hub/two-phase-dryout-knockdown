@@ -8,11 +8,11 @@
 
 ## Key result
 
-At a ±5 % channel-width tolerance, a 50-channel cold plate loses **about 12 % of its dryout power**, roughly **11× more** than a single-phase flow-split estimate predicts (about 1 %). With a marginal inlet restrictor, the loss can exceed 75 %.
+At a 5 % channel-width standard deviation, a 50-channel cold plate loses **about 12 % of its dryout power**, roughly **11× more** than a single-phase flow-split estimate predicts (about 1 %). With a marginal inlet restrictor, the loss can exceed 75 %.
 
 ![Knockdown factor](figures/fig2_knockdown.png)
 
-| ±5 % width tolerance | Dryout power kept (κ) | Single-phase estimate |
+| 5 % width std. dev. | Dryout power kept (κ) | Single-phase estimate |
 |---|---|---|
 | 2 channels, strong restrictor | 0.97 | 0.997 |
 | 10 channels, strong restrictor | 0.92 | 0.993 |
