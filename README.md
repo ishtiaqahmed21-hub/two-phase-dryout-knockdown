@@ -8,7 +8,7 @@
 
 ## Key result
 
-At a 5 % channel-width standard deviation, a 50-channel cold plate loses **about 12 % of its dryout power**, roughly **11× more** than a single-phase flow-split estimate predicts (about 1 %). With a marginal inlet restrictor, the loss can exceed 75 %.
+At a 5 % channel-width standard deviation, a 50-channel cold plate loses **about 12 % of its dryout power**, roughly **11× more** than a single-phase flow-split estimate predicts (about 1 %). With a marginal inlet restrictor, more than half is lost at 10 or more channels (50 to 88 % depending on the two-phase friction correlation).
 
 ![Knockdown factor](figures/fig2_knockdown.png)
 
@@ -17,9 +17,9 @@ At a 5 % channel-width standard deviation, a 50-channel cold plate loses **about
 | 2 channels, strong restrictor | 0.97 | 0.997 |
 | 10 channels, strong restrictor | 0.92 | 0.993 |
 | 50 channels, strong restrictor | 0.88 | 0.989 |
-| 50 channels, marginal restrictor | 0.12 | 0.95 |
+| 50 channels, marginal restrictor | 0.12 (0.34 with Kim & Mudawar friction) | 0.95 |
 
-Median of 20 Monte Carlo samples per point; 600 runs in total.
+Median of 20 Monte Carlo samples per point; 600 runs in total. Mishima & Hibiki friction unless stated.
 
 ## Why it matters
 
@@ -40,10 +40,10 @@ AI accelerators and power electronics are moving to two-phase cold plates. Desig
 | Check | Data | Result |
 |---|---|---|
 | Correlation coefficients | Kim & Mudawar 2013 (dryout eq. 5; pressure-drop Table 5) | Match exactly |
-| V1: pressure drop | Qu & Mudawar 2003, Fig. 6 (19 points) | Over-predicts, MAE 27 % |
+| V1: pressure drop | Qu & Mudawar 2003, Fig. 6 (19 points) | Over-predicts at every point, mean error +27 % (+7 % at low heat flux, about +40 % at high) |
 | V2: 2-channel flow split | Miglani, Weibel & Garimella 2021 | Boiling onset and trend captured; severity under-predicted (starved channel 9 % vs 3.5 % measured) |
 | V3: thermally coupled channels | Miglani, Weibel & Garimella 2021 (coupled) | **Not reproduced** (see limitations) |
-| Robustness | Two-phase friction scaled 0.45× | Knockdown factor essentially unchanged |
+| Robustness | Friction model swapped (Mishima & Hibiki vs Kim & Mudawar) and scaled 0.45× | Strong restrictor: knockdown unchanged (0.876 vs 0.879). Marginal restrictor: friction-sensitive (50 channels: 0.12 vs 0.34) |
 
 Measured points were read from the published figures (marker detection for Qu & Mudawar; text values and careful reading for Miglani). The digitized data are in `qu2003_fig6_digitized.csv` and `miglani2021_fig4_read.csv`.
 
